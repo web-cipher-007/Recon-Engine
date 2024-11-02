@@ -10,6 +10,7 @@ This is online based Recon Engine https://freelancermijan.github.io/reconengine/
 - **Git dorking:**
 - **CMS dorking:**
 - **Generic:**
+- **cve search :**
 - **Many more keep updating:**
 
 # If you wanna add any new feature you can DM me in telegram
