@@ -129,50 +129,18 @@ function cmsDork(dork) {
     }
 }
 
+function cveDork(dork) {
+    const domain = document.getElementById('searccve').value;
+    if (domain) {
+        const finalDork = dork.replace('example.com', domain);
+        
+        if (finalDork.startsWith('http://') || finalDork.startsWith('https://')) {
+            window.open(finalDork, '_blank');
+        } else {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const themeSwitch = document.getElementById('theme-switch');
-const themeLabel = document.getElementById('theme-label');
-
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    themeSwitch.checked = savedTheme === 'dark';
-    themeLabel.textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
-}
-
-function toggleTheme() {
-    if (themeSwitch.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeLabel.textContent = 'Light Mode';
-        localStorage.setItem('theme', 'dark');
+            window.open(`https://www.google.com/search?q=${encodeURIComponent(finalDork)}`, '_blank');
+        }
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        themeLabel.textContent = 'Dark Mode';
-        localStorage.setItem('theme', 'light');
+        alert('Please enter a target domain.');
     }
 }
-
-themeSwitch.addEventListener('change', toggleTheme);
