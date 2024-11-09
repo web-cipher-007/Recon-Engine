@@ -9,7 +9,8 @@ This is online based Recon Engine https://freelancermijan.github.io/reconengine/
 - **Port scanning:**
 - **URLs collecting:**
 - **All vulnerability Scanner:**
-- **Git dorking:**
+- **Github advance dorking:**
+- **Github custom payloads dorking:**
 - **CMS dorking:**
 - **Generic:**
 - **cve search :**
